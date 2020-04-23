@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row content-center">
+            <div class="col-12">
+                <form class="form-login" method="post">
+                    {{form.hidden_tag()}}
+                    <h1 class="h3 mb-3 font-weight-normal text-center">Войти</h1>
+                    {{form.email.label(class_="sr-only")}}
+                    {{form.email(class_="form-control custom-form-field", placeholder=form.email.label.text)}}
+                    {{form.password.label(class="sr-only")}}
+                    {{form.password(class_="form-control custom-form-field", placeholder=form.password.label.text)}}
+                    <div>
+                        <button type="submit" class="btn btn-lg btn-dark btn-block submit" name="login">Войти</button>
+                    </div>
+
+                </form>
+                <h6 class="form-status-message">{{ status }}</h6>
+            </div>
+        </div>
+{% endblock %}

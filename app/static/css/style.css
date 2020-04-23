@@ -1,0 +1,23 @@
+.content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.form-login {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.custom-form-field {
+    margin-bottom: 10px;
+}
+
+.custom-form-textarea {
+    min-height: 150px;
+    margin-bottom: 10px;
+}
